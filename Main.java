@@ -16,7 +16,6 @@ class Main {
    // calculate and print days the debtor has not payed for
 
    //kindly remove the statement below when you are done with the assignment
- 
         int defaultedDays=25;
         int amountPerDay=640;
         int amountPaid=1440;
