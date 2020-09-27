@@ -16,6 +16,36 @@ class Main {
    // calculate and print days the debtor has not payed for
 
    //kindly remove the statement below when you are done with the assignment
-    System.out.println("Hello world!");
+   class Main {
+    public static void main(String[] args) {
+        int defaultedDays=25;
+        int amountPerDay=640;
+        int amountPaid=1440;
+
+        int amountToPay;
+        int daysPaidFor;
+        int amount_Left_To_Pay;
+        int days_Not_Paid;
+        int amountNotPaidInDay;
+
+        amountToPay=defaultedDays*amountPerDay;
+        System.out.println("the amount to pay is "+amountToPay);
+
+        daysPaidFor=amountPaid/amountPerDay;
+        System.out.println("the days paid for are "+daysPaidFor);
+
+        amountNotPaidInDay=amountPaid%amountPerDay;
+        System.out.println("the amount that does not cover a day is "+amountNotPaidInDay);
+
+        amount_Left_To_Pay=((defaultedDays-daysPaidFor)*amountPerDay)+(amountPerDay-amountNotPaidInDay);
+        System.out.println("the amount left for the debtor to pay is "+amount_Left_To_Pay);
+
+        days_Not_Paid=defaultedDays-daysPaidFor;
+        System.out.println("the days debtor has not paid for are "+days_Not_Paid);
+
+
+
+
+
   }
 }
